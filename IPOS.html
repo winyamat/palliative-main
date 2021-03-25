@@ -1,0 +1,271 @@
+
+<html>
+<!DOCTYPE html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.exmp-wrp {
+    margin-top: 10px;
+    position: relative;
+    width: 200px;color:black;
+}
+
+.btn-wrp {
+    border: 1px solid #dadada;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.btn-clck {
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+}
+
+.btn-clck::-webkit-calendar-picker-indicator {
+    right: -10px;
+    position: absolute;
+    width: 78px;
+    height: 40px;
+    color: rgba(204, 204, 204, 0);
+    opacity: 0
+}
+
+.btn-clck::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.btn-clck::-webkit-clear-button {
+    margin-right:75px;
+ }
+.btn {
+    height: 100%;
+    background: #fda200;
+    border: none;
+    color: #fff;
+    padding: 13px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+h1{font-size: 20px;color:white;}
+h2{font-size: 20px;color:white;}
+h3{font-size: 20px;color:white;}
+h4{font-size: 20px;color:white;}
+h5{font-size: 20px;color:white;}
+h6{font-size: 20px;color:white;}
+h7{font-size: 20px;font-weight: bold;color:white;}
+h8{font-size: 20px;font-weight: bold;color:white;}
+h9{font-size: 20px;font-weight: bold;color:white;}
+h10{font-size: 20px;font-weight: bold;color:white;}
+h11{font-size: 20px;font-weight: bold;color:white;}
+h12{font-size: 20px;font-weight: bold;color:white;}
+h13{font-size: 20px;font-weight: bold;color:white;}
+h14{font-size: 20px;font-weight: bold;color:white;}
+h15{font-size: 20px;font-weight: bold;color:white;}
+h16{font-size: 20px;font-weight: bold;color:white;}
+.bg-img {
+  /* The image used */
+  background-image: url("newblue.jpg");
+
+  /* Control the height of the image */
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+</style>
+</head>
+
+<body>
+	
+	<div class="bg-img">
+		
+	<h1 align="center"> IPOS PATIENT VERSION</h1></br></br>
+	<h2>For staff use </h2>
+	<div style="color: white;font-size:15px;">
+Patientnumber:<input type="text" name="Patientnumber" style="width:200px;height:30px;border-radius:5px;margin-left: 10px"></div>
+<div style="color: white;font-size:15px;">
+Patientname:<input type="text" name="Patientname" style="width:200px;height:30px;border-radius:5px;margin-left: 20px"></div>
+<div>
+<div class="exmp-wrp">
+  <div class="btn-wrp">
+    <input type="date" class="btn-clck"/>
+  </div>
+  <button class="btn">Click me</button>
+</div>
+<p>Please write clearly, one letter or digit per box. Your answers will help us to keep improving
+your care and the care of others.
+Thank you.</p>
+<h3>Q1. What have been your main problems or concerns over the past 3 days?</h3><br>
+<div style="color: black;font-size:15px;">
+Option 1:<input type="text" name="option1" style="width:200px;height:20px;border-radius:5px;margin-left: 10px"></div><br>
+<div style="color: black;font-size:15px;">
+Option 2:<input type="text" name="option2" style="width:200px;height:20px;border-radius:5px;margin-left: 10px"></div><br>
+<div style="color: black;font-size:15px;">
+Option 3:<input type="text" name="option3" style="width:200px;height:20px;border-radius:5px;margin-left: 10px"></div><br>
+
+<h4>Q2. Below is a list of symptoms, which you may or may not have experienced. For each
+symptom, please tick one box that best describes how it has affected you over the past 3
+days.</h4>
+<p>The severity of problems are rated and responded to following using the scale:<br>
+0 = Not at all;  1 = slightly;  2 = Moderate;  3 = Severely; 4=overwhelmingly</p>
+<div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<table>
+  <div><h7>Pain</h7></div>
+<tr>
+ <td> <input name="radio1" value="1" type="radio">not at all </td>
+ <td> <input name="radio1" value="2" type="radio">slightly</td>
+ <td> <input name="radio1" value="3" type="radio">moderately</td>
+<td> <input name="radio1" value="4" type="radio">severely</td>
+ <td> <input name="radio1" value="5" type="radio">overwhelmingly</td>
+</tr>
+</table>
+<br>
+  <div><h8>Nausea:</h8></div><br>
+<tr>
+ <td> <input name="radio2" value="1"  type="radio">Not at all</td>
+ <td> <input name="radio2" value="2" type="radio">slightly</td>
+  <td><input name="radio2" value="3" type="radio">moderately</td>
+<td> <input name="radio2" value="4" type="radio">severely</td>
+ <td> <input name="radio2" value="5" type="radio">overwhelmingly</td>
+</tr>
+  <div><h9>Vomitting:</h9></div><br>
+  <td><input name="radio3" value="1" type="radio">Not at all</td>
+  <td><input name="radio3" value="2" type="radio">slightly</td>
+  <td><input name="radio3" value="3" type="radio">moderately</td>
+ <td> <input name="radio3" value="4" type="radio">severely</td>
+ <td> <input name="radio3" value="5" type="radio">overwhelmingly</td>
+</tr>
+<div><h10>Shortness of breath:</h10></div><br>
+<tr>
+ <td> <input name="radio4" value="1" type="radio">Not at all</td>
+ <td> <input name="radio4" value="2" type="radio">slightly</td>
+  <td><input name="radio4" value="3" type="radio">moderately</td>
+<td> <input name="radio4" value="4" type="radio">severely</td>
+ <td> <input name="radio4" value="5" type="radio">overwhelmingly</td>
+</tr>
+<div><h11>weakness or lack of energy:</h11></div><br>
+<tr>
+ <td> <input name="radio5" value="1" type="radio">Not at all</td>
+ <td> <input name="radio5" value="2" type="radio">slightly</td>
+  <td><input name="radio5" value="3" type="radio">moderately</td>
+<td> <input name="radio5" value="4" type="radio">severely</td>
+ <td> <input name="radio5" value="5" type="radio">overwhelmingly</td>
+</tr>
+
+<div><h12>poor appetite:</h12></div><br>
+<tr>
+ <td> <input name="radio6" value="1" type="radio">Not at all</td>
+ <td> <input name="radio6" value="2" type="radio">slightly</td>
+  <td><input name="radio6" value="3" type="radio">moderately</td>
+<td> <input name="radio6" value="4" type="radio">severely</td>
+ <td> <input name="radio6" value="5" type="radio">overwhelmingly</td>
+</tr>
+<div><h13>Constipation:</h13></div><br>
+<tr>
+ <td> <input name="radio7" value="1" type="radio">Not at all</td>
+ <td> <input name="radio7" value="2" type="radio">slightly</td>
+  <td><input name="radio7" value="3" type="radio">moderately</td>
+<td> <input name="radio7" value="4" type="radio">severely</td>
+ <td> <input name="radio7" value="5" type="radio">overwhelmingly</td>
+</tr>
+<div><h14>sore or dry mouth:</h14></div><br>
+<tr>
+ <td> <input name="radio8" value="1" type="radio">Not at all</td>
+ <td> <input name="radio8" value="2" type="radio">slightly</td>
+  <td><input name="radio8" value="3" type="radio">moderately</td>
+<td> <input name="radio8" value="4" type="radio">severely</td>
+ <td> <input name="radio8" value="5" type="radio">overwhelmingly</td>
+</tr>
+<div><h15>drowsiness:</h15></div><br>
+<tr>
+ <td> <input name="radio9" value="1" type="radio">Not at all</td>
+ <td> <input name="radio9" value="2" type="radio">slightly</td>
+  <td><input name="radio9" value="3" type="radio">moderately</td>
+<td> <input name="radio9" value="4" type="radio">severely</td>
+ <td> <input name="radio9" value="5" type="radio">overwhelmingly</td>
+</tr>
+<div><h16>poor mobility:</h16></div><br>
+<tr>
+ <td> <input name="radio10" value="1" type="radio">Not at all</td>
+ <td> <input name="radio10" value="2" type="radio">slightly</td>
+  <td><input name="radio10" value="3" type="radio">moderately</td>
+<td> <input name="radio10" value="4" type="radio">severely</td>
+ <td> <input name="radio10" value="5" type="radio">overwhelmingly</td>
+</tr>
+</table>
+
+</br></br></br></br>
+
+
+
+<input type="button" onclick="myFunction()"value="Submit" style="width:150px;height:40px;background-color:green;color:white;border-radius:5px;cursor:pointer;margin-left:480px"/></br></br></br></br></br></br>
+
+  <input type="button" onclick="location.href='chart.html'"value="Score" style="width:150px;height:40px;background-color:green;color:white;border-radius:5px;cursor:pointer;margin-left:480px"/></br></br></br></br>
+
+
+<input type="button" onclick="location.href='KPS.html'"value="NEXT" style="width:150px;height:40px;background-color:green;color:white;border-radius:5px;cursor:pointer;margin-left:1050px"/>
+<input type="button" onclick="location.href='POI.html'"value="BACK" style="width:150px;height:40px;background-color:green;color:white;border-radius:5px;cursor:pointer;margin-left:20px"/></br></br></br></br></br></br>
+
+
+  
+</div>
+<script>
+	
+
+
+function myFunction()
+{
+    for(k=1; k<=10; k++)
+        checkVal(document.getElementsByName("radio"+k))     
+
+}
+
+function checkVal(selector){
+for (var i = 0; i < selector.length; i++) {       
+        if (selector[i].checked) {
+            switch (selector[i].value){
+                case '1' :
+                    alert("You are now okay")
+                    break;
+                case '2' :
+                    alert("You are in the starting stage.So please take care.")
+                    break;
+                case '3' :
+                    alert("You are now in the second stage")
+                    break; 
+                case '4' :
+                    alert("please give attention to your health because it is serious")
+                    break;  
+                case '5' :
+                    alert("You are in extreme situation")
+                    break; 
+ }
+
+            break;  
+
+        }
+    }
+}
+
+
+</script>
+
+</body>
+</html>

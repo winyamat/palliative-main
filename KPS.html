@@ -1,0 +1,85 @@
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+    .bg-img {
+  /* The image used */
+  background-image: url("download.jpg");
+
+  /* Control the height of the image */
+  min-height: 580px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+  
+</style>
+</head>
+
+<script>
+  function patientscore()
+  {
+    var myscore=document.getElementById("myscore");
+    document.getElementById("score").value=myscore.options[myscore.selectedIndex].text;
+  }
+  function patientpoi()
+  {
+    var mypoi=document.getElementById("mypoi");
+    document.getElementById("result").value=mypoi.options[mypoi.selectedIndex].text;
+  }
+</script>
+<body>
+  <div class="bg-img">
+<h1>Karnofsky Performance Status Scale (10-100)&Phase of illness </h1>
+<form>
+  choose your category:
+<select id="myscore" onchange="patientscore()">
+<option>100.  Normal, no complaints or evidence of disease</option>
+<option>90. Able to carry on normal activity, minor signs or symptoms of disease</option>
+<option>80. Normal activity with effort, some signs or symptoms of disease</option>
+<option>70. Care for self, unable to carry on normal activity or to do active work</option>
+<option>60. Occasional assistance but is able to care for most needs</option>
+<option>50. Requires considerable assistance and frequent medical care</option>
+<option>40. In bed more that 50% of the time</option>
+<option>30. Almost completely bedfast</option>
+<option>20. Totally bedfast & requiring nursing care by professionals and/or family</option>
+<option>10. Comatose or barely rousable</option>
+</select>
+
+<p><div style="color: black;font-size:15px;">
+Your KPS is:<input type="text" id="score" style="width:200px;height:30px;border-radius:5px;margin-left: 20px"></div></p>
+</form>
+<h2>Phase of illness</h2>
+<p>Clinician rated assessment <br><br><br>
+1.  Stable Symptoms and problems are adequately controlled by established management. Monitor, review, anticipate & respond.<br><br>
+2.  Unstable An urgent change in the plan of care or emergency treatment is required due to development of a new problem &/or a rapid increase in the severity of existing problems &/or family/carer problems. Urgent response required.<br><br>
+3.  Deteriorating The plan of care is addressing anticipated needs but requires periodic review due to gradual functional decline &/or worsening of existing symptoms &/or the development of new but expected problems &/or family/carer problems. Review & change care plan<br><br>
+4.  Terminal Death likely in a matter of days. Monitor, review & respond<br><br></p>
+
+<form>
+  select symptoms:
+  <select id="mypoi" onchange="patientpoi()">
+  <option>1-stable</option>
+  <option>2-unstable</option>
+  <option>3-deteriorating</option>
+  <option>4-terminal</option>
+</select>
+<p>
+  <div style="color: black;font-size:15px;">
+Your POI is:<input type="text" id="result" style="width:200px;height:30px;border-radius:5px;margin-left: 20px"></div></p></br></br></br></br></br></br>
+
+
+
+
+<input type="button" onclick="location.href='rate.html'"value="NEXT" style="width:150px;height:40px;background-color:green;color:white;border-radius:5px;cursor:pointer;margin-left:1050px"/>
+<input type="button" onclick="location.href='IPOS.html'"value="BACK" style="width:150px;height:40px;background-color:green;color:white;border-radius:5px;cursor:pointer;margin-left:20px"/></br></br></br></br></br></br>
+</form>
+</div>
+</body>
+</html>

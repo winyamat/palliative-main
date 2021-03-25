@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login form validation</title>
+</head>
+<script>
+function loginformvalidation()
+{
+	var a = document.loginform.username.value;
+if(a==""){
+	alert("Please fill out the user name ");
+	return false;
+}
+
+
+var b = document.loginform.password.value;
+if(b.length<5){
+	alert("password should be more than 5 characters ");
+	return false;
+}
+}
+</script>
+<body>
+	<h1 align="center">Nurses and Doctors</h1>
+<form name="loginform" action="KPS.html" onsubmit="return loginformvalidation()" method="post">
+<div style="color: black;font-size:25px;margin-left:250px">
+Username:<input type="text" name="username" style="width:400px;height:40px;border-radius:5px;margin-left: 35px"></div><br><br>
+<div style="color: black;font-size:25px;margin-left:250px">
+Password:<input type="text" name="password" style="width:400px;height:40px;border-radius:5px;margin-left: 40px"></div><br><br>
+<div>
+<input type="SUBMIT" value="LOGIN" style="width:200px;height:60px;background-color:black;color:white;border-radius:5px;cursor:pointer;margin-left:480px">
+
+<img src="palliative.png" width="1250" height="550">
+
+
+
+</div>
+</form>
+</body>
+</html>
